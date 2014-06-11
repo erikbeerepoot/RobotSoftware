@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\erik\My Documents\hello\Projects\MDK-ARM\RobotController.uvproj
+Project File Date:  06/10/2014
+
+<h2>Output:</h2>
+Build target 'RobotController Configuration'
+compiling MotionSensor.c...
+..\..\Src\MotionSensor.h(16): warning:  #1-D: last line of file ends without a newline
+  status_code_t MotionSensor_Intialize(struct MotionSensorConfig *config);
+..\..\Src\MotionSensor.c(30): warning:  #223-D: function "mpu_receive" declared implicitly
+        status_code_t status = mpu_receive(buffer,1);
+..\..\Src\MotionSensor.c(30): warning:  #188-D: enumerated type mixed with another type
+        status_code_t status = mpu_receive(buffer,1);
+..\..\Src\MotionSensor.c: 3 warnings, 0 errors
+compiling MotionSensor_HAL.c...
+..\..\Src\MotionSensor_HAL.c(3): error:  #20: identifier "status_code_t" is undefined
+  status_code_t mpu_receive(uint8_t *buffer,int bufferSize,int receiveLength){
+..\..\Src\MotionSensor_HAL.c(3): error:  #20: identifier "uint8_t" is undefined
+  status_code_t mpu_receive(uint8_t *buffer,int bufferSize,int receiveLength){
+..\..\Src\MotionSensor_HAL.c(5): error:  #20: identifier "STATUS_OK" is undefined
+        return STATUS_OK;
+..\..\Src\MotionSensor_HAL.c(8): error:  #20: identifier "status_code_t" is undefined
+  status_code_t mpu_transmit(uint8_t *buffer, int bufferLength){
+..\..\Src\MotionSensor_HAL.c(8): error:  #20: identifier "uint8_t" is undefined
+  status_code_t mpu_transmit(uint8_t *buffer, int bufferLength){
+..\..\Src\MotionSensor_HAL.c(10): error:  #20: identifier "STATUS_OK" is undefined
+        return STATUS_OK;
+..\..\Src\MotionSensor_HAL.c: 0 warnings, 6 errors
+"hello Configuration\RobotController Configuration.axf" - 6 Error(s), 3 Warning(s).
+Target not created
+</pre>
+</body>
+</html>
+,int bufferSize,int receiveLength);
+..\..\Src\MotionSensor_HAL.h(7): error:  #147-D: declaration is incompatible with "status_code_t mpu_transmit(uint8_t *, int)" (declared at line 7)
+  status_code_t mpu_transmit(uint8_t *buffer, int bufferLength);
+..\..\Src\MotionSensor_HAL.c: 3 warnings, 10 errors
+"hello Configuration\RobotController Configuration.axf" - 10 Error(s), 3 Warning(s).
+Target not created
+th){
+..\..\Src\MotionSensor_HAL.c: 1 warning, 8 errors
+"hello Configuration\RobotController Configuration.axf" - 8 Error(s), 5 Warning(s).
+Target not created

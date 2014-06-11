@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"hello configuration\startup_stm32f439xx.o"
+"hello configuration\main.o"
+"hello configuration\stm32f4xx_hal_msp.o"
+"hello configuration\stm32f4xx_it.o"
+"hello configuration\blecommunication.o"
+"hello configuration\motionsensor.o"
+"hello configuration\system_stm32f4xx.o"
+"hello configuration\stm32f4xx_hal.o"
+"hello configuration\stm32f4xx_hal_cortex.o"
+"hello configuration\stm32f4xx_hal_dma.o"
+"hello configuration\stm32f4xx_hal_dma_ex.o"
+"hello configuration\stm32f4xx_hal_flash.o"
+"hello configuration\stm32f4xx_hal_flash_ex.o"
+"hello configuration\stm32f4xx_hal_gpio.o"
+"hello configuration\stm32f4xx_hal_pwr.o"
+"hello configuration\stm32f4xx_hal_pwr_ex.o"
+"hello configuration\stm32f4xx_hal_rcc.o"
+"hello configuration\stm32f4xx_hal_rcc_ex.o"
+"hello configuration\stm32f4xx_hal_uart.o"
+--library_type=microlib --strict --scatter "hello Configuration\hello Configuration.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hello Configuration.map" -o "hello Configuration\hello Configuration.axf"
